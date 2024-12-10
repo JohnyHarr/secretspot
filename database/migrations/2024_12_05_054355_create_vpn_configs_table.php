@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('vpn_configs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('hostVDS')->default('')->nullable();
-            $table->string('aeza')->default('')->nullable();
+            $table->longText('hostVDS')->default('')->nullable();
+            $table->longText('aeza')->default('')->nullable();
             $table->timestamps();
         });
     }

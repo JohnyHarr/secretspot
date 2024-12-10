@@ -26,3 +26,4 @@ Route::post('/admin/update-user-data/update', [\App\Http\Controllers\UpdateUserD
 Route::post('/admin/update-user-data/delete', [\App\Http\Controllers\UpdateUserDataController::class, 'delete'])->name('admin.updateUserData.delete')->middleware('checkIfAdmin');
 Route::get('/admin/update-server-id', \App\Http\Controllers\UpdateServerIdController::class.'@index')->name('admin.updateServerId')->middleware('checkIfAdmin');
 Route::post('/admin/update-server-id/update', UpdateServerIdController::class.'@update')->name('admin.updateServerId.update')->middleware('checkIfAdmin');
+Route::get('/admin/keygen', \App\Http\Controllers\KeyGenController::class.'@index')->name('admin.keygen')->middleware('checkIfAdmin');

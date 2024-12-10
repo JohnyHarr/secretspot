@@ -18,6 +18,7 @@
         <a class="p-2 text-light" href="{{route('admin.registration')}}">Добавить пользователя</a>
         <a class="p-2 text-light" href="{{route('admin.updateUserData')}}">Изменить пользователя</a>
         <a class="p-2 text-light" href="{{route('admin.updateServerId')}}">Изменить ид сервера</a>
+        <a class="p-2 text-light" href="{{route('admin.keygen')}}">Сгенерировать ключ</a>
     </nav>
     <a class="btn btn-outline-warning" href="{{route('user.logout')}}">Выйти</a>
 </div>
