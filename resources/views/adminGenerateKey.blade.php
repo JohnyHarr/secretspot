@@ -74,10 +74,10 @@
         <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Сгенерировать</button>
     </form>
     <div class="form-signin form-update-data" style="margin-top: 100px; margin-bottom: 150px">
-        <pre id="generatedKey"></pre>
+        <pre id="generatedKey">vless://</pre>
         <button type="button" class="copy" data-copy="#generatedKey">
             <ion-icon name="clipboard-outline" class="copy-icon"></ion-icon>
-            <span class="copy-label">Copy</span>
+            <span class="copy-label">Копировать</span>
         </button>
     </div>
 @endsection
