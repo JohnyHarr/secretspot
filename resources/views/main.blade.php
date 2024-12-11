@@ -1,4 +1,7 @@
 @extends("layout")
+@section('title')
+    Конфигурации
+@endsection
 @section('scripts')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="{{asset('./ping.js')}}"></script>

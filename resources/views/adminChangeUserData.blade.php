@@ -1,4 +1,7 @@
 @extends('layout_admin')
+@section('title')
+    Редактор пользователей
+@endsection
 @section('main_content')
     @foreach($users as $user)
         <form class="form-signin form-update-data" id="form" action="{{route('admin.updateUserData.update')}}" method="POST">

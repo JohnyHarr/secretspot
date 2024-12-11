@@ -1,5 +1,9 @@
 @extends('layout_admin')
 
+@section('title')
+    Генерация ключа
+@endsection
+
 @section('scripts')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>

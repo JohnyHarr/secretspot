@@ -1,4 +1,7 @@
 @extends('layout_admin')
+@section('title')
+    Обновление Id сервера
+@endsection
 @section('main_content')
     @foreach($servers as $server)
         <form class="form-signin form-update-data" id="form" action="{{route('admin.updateServerId.update')}}" method="POST">
