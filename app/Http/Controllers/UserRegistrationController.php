@@ -23,10 +23,15 @@ class UserRegistrationController extends Controller
         $user->login = $credentials['login'];
         $user->password = $credentials['password'];
         $user->role = $credentials['role'];
+        try {
+            $user->save();
+        }
+        catch (\Exception $exception){
+            return response('reg_failed', 200)->header('Content-Type', 'text/plain');
+        }
         $vpnConfigs = new VpnConfigs;
         $vpnConfigs->user_id = $user->id;
         try {
-            $user->save();
             $vpnConfigs->save();
         }
         catch (\Exception $exception){
