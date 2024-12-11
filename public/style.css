@@ -52,21 +52,10 @@ body {
     font-size: 18px;
 }
 
-
-.error {
+.alert {
     margin-top: -7px;
     margin-bottom: 3px;
     padding: 2px;
-    color: #ED4337;
-    padding-inline:10px;
-    border-radius: 5px;
-}
-
-.success {
-    margin-top: -7px;
-    margin-bottom: 3px;
-    padding: 2px;
-    color: rgba(34, 139, 34, 0.62);
     padding-inline:10px;
     border-radius: 5px;
 }

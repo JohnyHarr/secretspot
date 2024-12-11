@@ -47,7 +47,7 @@
     <input id="login" class="form-control" placeholder="Логин" required="" autofocus="">
     <label for="password" class="sr-only">Пароль</label>
     <input type="password" id="password" class="form-control" placeholder="Пароль" >
-    <div id="login_error" class="hidden badge-danger error text-light">Неправильный логин или пароль</div>
+    <div id="login_error" class="hidden alert badge-danger text-light">Неправильный логин или пароль</div>
     <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Войти</button>
 </form>
 </body>

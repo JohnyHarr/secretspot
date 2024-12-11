@@ -56,8 +56,8 @@
         <input type="password" id="password" class="form-control" placeholder="Новый пароль" required="" autofocus="">
         <label  for="password" class="sr-only">Пароль</label>
         <input type="password" id="confirm-password" class="form-control" placeholder="Повторите пароль">
-        <div id="error" class="badge-danger error text-light" hidden></div>
-        <div id="success" class="badge-success success text-light" hidden>Пароль изменен</div>
+        <div id="error" class="badge-danger  alert badge-danger text-light" hidden></div>
+        <div id="success" class="badge-success alert text-light" hidden>Пароль изменен</div>
         <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit" disabled>Изменить пароль</button>
     </form>
 @endsection

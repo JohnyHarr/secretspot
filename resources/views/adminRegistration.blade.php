@@ -41,7 +41,7 @@
         <input name="password" id="password" class="form-control" placeholder="Пароль" required="">
         <label for="role" class="sr-only">Роль(user/admin)</label>
         <input name="role" id="role" class="form-control" placeholder="Роль(user/admin)" required="">
-        <div id="login_error" class="hidden alert-warning"></div>
+        <div id="login_error" class="hidden alert badge-danger"></div>
         <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Зарегистрировать</button>
     </form>
 @endsection
