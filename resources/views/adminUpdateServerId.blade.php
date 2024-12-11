@@ -8,7 +8,7 @@
             <label for="aeza" class="sr-only">Aeza</label>
             <textarea id="aeza" name="newServerId" class="form-control text-area" placeholder="server id"
                       autofocus="">{{$server->server_id}}</textarea>
-            <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Save</button>
+            <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Сохранить</button>
         </form>
     @endforeach
 @endsection

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Spatie\Sitemap\SitemapGenerator;
 use Symfony\Component\HttpFoundation\Response;
 
-class CheckIfAdmin
+class CheckAccess
 {
     /**
      * Handle an incoming request.

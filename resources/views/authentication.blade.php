@@ -9,8 +9,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link href="{{asset("./style.css")}}" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -44,13 +42,13 @@
 
 <form class="form-signin" id="form">
     @csrf
-    <h1 class="h3 mb-3 font-weight-normal text-light">Please sign in</h1>
-    <label for="login" class="sr-only">Email address</label>
-    <input id="login" class="form-control" placeholder="Login" required="" autofocus="">
-    <label for="password" class="sr-only">Password</label>
-    <input type="password" id="password" class="form-control" placeholder="Password" >
-    <div id="login_error" class="hidden badge-danger error text-light">Тест</div>
-    <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Sign in</button>
+    <h1 class="h3 mb-3 font-weight-normal text-light">Пожалуйста авторизуйтесь</h1>
+    <label for="login" class="sr-only">Логин</label>
+    <input id="login" class="form-control" placeholder="Логин" required="" autofocus="">
+    <label for="password" class="sr-only">Пароль</label>
+    <input type="password" id="password" class="form-control" placeholder="Пароль" >
+    <div id="login_error" class="hidden badge-danger error text-light">Неправильный логин или пароль</div>
+    <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Войти</button>
 </form>
 </body>
 </html>

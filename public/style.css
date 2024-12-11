@@ -48,7 +48,6 @@ body {
 
 .hidden {
     margin-top: -10px;
-    color: #ED4337;
     display: none;
     font-size: 18px;
 }
@@ -57,7 +56,23 @@ body {
 .error {
     margin-top: -7px;
     margin-bottom: 3px;
+    padding: 2px;
+    color: #ED4337;
+    padding-inline:10px;
     border-radius: 5px;
+}
+
+.success {
+    margin-top: -7px;
+    margin-bottom: 3px;
+    padding: 2px;
+    color: rgba(34, 139, 34, 0.62);
+    padding-inline:10px;
+    border-radius: 5px;
+}
+
+.user-registration input{
+    margin-bottom: 7px;
 }
 
 .copy {

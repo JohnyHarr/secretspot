@@ -1,5 +1,5 @@
 @extends("layout")
-@section('script')
+@section('scripts')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="{{asset('./ping.js')}}"></script>
     <script>
@@ -72,14 +72,14 @@
 @endsection
 @section('main_content')
     <div class="main-container text-light">
-        <h1>Welcome, {{$user->login}}</h1>
-        <h4>VPN Configs: </h4>
+        <h1>Добро пожаловать, {{$user->login}}</h1>
+        <h4>VPN конфиги: </h4>
         <div class="vpn-container">
             <h5 id="hostingName{{$aezaId}}"><span id="status{{$aezaId}}" style="color: orange">Loading status...</span></h5>
             <pre id="aezaConfig">{{$user->vpnConfigs()->first()->aeza}}</pre>
             <button type="button" class="copy" data-copy="#aezaConfig">
                 <ion-icon name="clipboard-outline" class="copy-icon"></ion-icon>
-                <span class="copy-label">Copy</span>
+                <span class="copy-label">Копировать</span>
             </button>
         </div>
         <div class="vpn-container">
@@ -87,7 +87,7 @@
             <pre id="hostVDSConfig">{{$user->vpnConfigs()->first()->hostVDS}}</pre>
             <button type="button" class="copy" data-copy="#hostVDSConfig">
                 <ion-icon name="clipboard-outline" class="copy-icon"></ion-icon>
-                <span class="copy-label">Copy</span>
+                <span class="copy-label">Копировать</span>
             </button>
         </div>
     </div>

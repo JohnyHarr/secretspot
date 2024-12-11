@@ -60,17 +60,17 @@
 @endsection
 
 @section('main_content')
-    <form class="form-signin form-update-data" id="form">
+    <form class="form-signin user-registration form-update-data" id="form">
         @csrf
         <h1 class="h3 mb-3 font-weight-normal text-light">Генерация ключей доступа</h1>
-        <input id="uuid" name="uuid" class="form-control text-area" placeholder="uuid" autofocus="">
-        <input id="privkey" name="privkey" class="form-control text-area" placeholder="privkey" autofocus="">
-        <input id="pubkey" name="pubkey" class="form-control text-area" placeholder="pubkey" autofocus="">
-        <input id="shortid" name="shortid" class="form-control text-area" placeholder="shortid" autofocus="">
-        <input id="ip" name="ip" class="form-control text-area" placeholder="ip" autofocus="">
-        <input id="email" name="email" class="form-control text-area" placeholder="email" autofocus="">
-        <input id="sni" name="sni" class="form-control text-area" placeholder="sni" autofocus="">
-        <input id="port" name="port" class="form-control text-area" placeholder="port" autofocus="">
+        <input id="uuid" name="uuid" class="form-control" placeholder="uuid" autofocus="">
+        <input id="privkey" name="privkey" class="form-control " placeholder="privkey" autofocus="">
+        <input id="pubkey" name="pubkey" class="form-control" placeholder="pubkey" autofocus="">
+        <input id="shortid" name="shortid" class="form-control" placeholder="shortid" autofocus="">
+        <input id="ip" name="ip" class="form-control" placeholder="ip" autofocus="">
+        <input id="email" name="email" class="form-control" placeholder="email" autofocus="">
+        <input id="sni" name="sni" class="form-control" placeholder="sni" autofocus="">
+        <input id="port" name="port" class="form-control" placeholder="port" autofocus="">
         <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Сгенерировать</button>
     </form>
     <div class="form-signin form-update-data" style="margin-top: 100px; margin-bottom: 150px">

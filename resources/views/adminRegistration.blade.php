@@ -21,7 +21,7 @@
                     body: formData
                 }).then(response => response.text()).then(data => {
                     if (data === 'reg_failed') {
-                        $("#login_error").text("Что-то пошло не так").removeClass("hidden");
+                        $("#login_error").text("Что-то пошло не так. Возможно логин уже занят").removeClass("hidden");
                     }
                     if (data === 'reg_success') {
                         $("#login_error").text("Зарегистрирован").removeClass("hidden")
@@ -32,16 +32,16 @@
     </script>
 @endsection
 @section('main_content')
-    <form class="form-signin" id="form">
+    <form class="form-signin user-registration" id="form">
         @csrf
-        <h1 class="h3 mb-3 font-weight-normal text-light">Please enter credentials</h1>
-        <label for="login" class="sr-only">Email address</label>
-        <input id="login" name="login" class="form-control" placeholder="Email address" required="" autofocus="">
-        <label for="password" class="sr-only">Password</label>
-        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
-        <label for="role" class="sr-only">Role</label>
-        <input name="role" id="role" class="form-control" placeholder="Role" required="">
+        <h1 class="h3 mb-3 font-weight-normal text-light">Данные пользователя</h1>
+        <label for="login" class="sr-only">Логин</label>
+        <input id="login" name="login" class="form-control" placeholder="Логин" required="" autofocus="">
+        <label for="password" class="sr-only">Пароль</label>
+        <input name="password" id="password" class="form-control" placeholder="Пароль" required="">
+        <label for="role" class="sr-only">Роль(user/admin)</label>
+        <input name="role" id="role" class="form-control" placeholder="Роль(user/admin)" required="">
         <div id="login_error" class="hidden alert-warning"></div>
-        <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Register</button>
+        <button class="btn btn-lg btn-primary btn-warning btn-block" type="submit">Зарегистрировать</button>
     </form>
 @endsection

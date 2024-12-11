@@ -16,7 +16,7 @@ class UserRegistrationController extends Controller
     public function register(Request $request){
         $credentials = $request->validate([
             'login' => 'required|string|max:255',
-            'password' => 'required|string|min:8|max:50',
+            'password' => 'required|string|min:8|max:255',
             'role' => 'string'
         ]);
         $user = new User;
