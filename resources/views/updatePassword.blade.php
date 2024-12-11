@@ -53,8 +53,8 @@
     <form class="form-signin" id="form">
         @csrf
         <label for="password" class="sr-only">Пароль</label>
-        <input id="password" class="form-control" placeholder="Новый пароль" required="" autofocus="">
-        <label for="password" class="sr-only">Пароль</label>
+        <input type="password" id="password" class="form-control" placeholder="Новый пароль" required="" autofocus="">
+        <label  for="password" class="sr-only">Пароль</label>
         <input type="password" id="confirm-password" class="form-control" placeholder="Повторите пароль">
         <div id="error" class="badge-danger error text-light" hidden></div>
         <div id="success" class="badge-success success text-light" hidden>Пароль изменен</div>
