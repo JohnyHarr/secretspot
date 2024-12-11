@@ -18,9 +18,12 @@ class UpdatePasswordController extends Controller
     {
         $request->validate(['password' => 'required|string|max:255|min:8']);
         Auth::user()->password = $request['password'];
-        if (Auth::user()->save())
+        try {
+            Auth::user()->save();
+        } catch (\Throwable $th) {
+            return response('failed', 200)->header('Content-Type', 'text/plain');
+        }
             return response('success', 200)->header('Content-Type', 'text/plain');
-        return response('failed', 200)->header('Content-Type', 'text/plain');
     }
 
 }
