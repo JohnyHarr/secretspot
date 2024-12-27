@@ -36,7 +36,7 @@ yastatic.net
         <h4>4. Проверить утечки dns через extended test на сайте <a href="https://www.dnsleaktest.com/" target="_blank">dnsleak</a>
             (результат не должен содержать сервера из России/Украины и должен быть схож с скриншотом)</h4>
         <div class="img-container">
-            <img class="card-img img-custom img-android" src="{{asset('./imgs/test.')}}">
+            <img class="card-img img-custom img-android" src="{{asset('./imgs/test.jpg')}}">
         </div>
     </div>
 @endsection
