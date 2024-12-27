@@ -39,6 +39,7 @@
 @section('main_content')
     <div class="main-container text-light">
         <h1>Как настроить?</h1>
+        <h4 class="text-warning"><a href="{{route('user.howToSetupAndroid')}}">Как настроить на android</a></h4>
         <h4>0. <a href="https://github.com/MatsuriDayo/nekoray/releases/tag/4.0.1" target="_blank">Скачать обновленный nekoray</a>
         </h4>
         <h4>1. Импортируйте и запустите профиль:</h4>

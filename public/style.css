@@ -114,10 +114,21 @@ pre {
     width: 50%;
     padding: 10px;
     max-width: 800px;
+    text-align: center;
+}
+
+.img-container pre{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
 }
 
 .img-custom{
     border-radius: 10px;
+}
+
+.img-android{
+    max-width: 400px;
 }
 
 footer {
