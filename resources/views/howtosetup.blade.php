@@ -49,7 +49,7 @@
         <div class="img-container">
             <img class="card-img img-custom" src="{{asset('./imgs/run_profile.png')}}">
         </div>
-        <h4>2. Настройте режим tun(настройки -> настройки tun-режима)</h4>
+        <h4>2. Настройте режим tun(настройки -> настройки tun-режима)(fakedns можно выключить)</h4>
         <div class="img-container">
             <img class="card-img img-custom" src="{{asset('./imgs/tun_setup.png')}}">
         </div>
