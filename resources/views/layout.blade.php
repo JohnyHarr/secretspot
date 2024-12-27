@@ -13,12 +13,13 @@
 </head>
 <body class="bg-dark">
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal">JohnyHarr's Secret Spot</h5>
+    <h5 class="my-0 mr-md-auto font-weight-normal"><a class="text-light" href="{{route('user.main')}}">JohnyHarr's Secret Spot</a></h5>
     <nav class="my-2 my-md-0 mr-md-3">
         @if(\Illuminate\Support\Facades\Auth::user()->role === 'admin')
         <a class="p-2 text-light" href="{{route('admin.updateUserData')}}">Админка</a>
         @endif
         <a class="p-2 text-light" href="{{route('user.update-password')}}">Изменить пароль</a>
+        <a class="p-2 text-light" href="{{route('user.howToSetup')}}">Гайд по настройке</a>
     </nav>
     <a class="btn btn-outline-warning" href="{{route('user.logout')}}">Выйти</a>
 </div>

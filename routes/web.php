@@ -19,6 +19,7 @@ Route::get('/authentication', \App\Http\Controllers\AuthController::class.'@inde
 Route::get('/update-password', \App\Http\Controllers\UpdatePasswordController::class.'@index')->name('user.update-password')->middleware('checkAccess');
 Route::post('/update-password', \App\Http\Controllers\UpdatePasswordController::class.'@updatePassword')->name('user.update-password.update')->middleware('checkAccess');
 Route::get('/main', \App\Http\Controllers\MainController::class.'@index')->name('user.main')->middleware('checkAccess');
+Route::get('/how-to-setup', \App\Http\Controllers\HowToSetupPageController::class.'@index')->name('user.howToSetup')->middleware('checkAccess');
 Route::get('/logout', \App\Http\Controllers\AuthController::class.'@logout')->name('user.logout');
 Route::get('admin/user-registration', \App\Http\Controllers\UserRegistrationController::class.'@index')->name('admin.registration')->middleware('checkAccess');
 Route::post('/authentication/authenticate', [\App\Http\Controllers\AuthController::class, 'authenticate'])->name('authentication.authenticate');

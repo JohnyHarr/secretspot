@@ -78,6 +78,7 @@
         <h1>Добро пожаловать, {{$user->login}}</h1>
         <h4>VPN конфиги: </h4>
         <h5 class="text-warning">Статус сервера обновляется каждые 5 минут</h5>
+        <h5 class="text-warning"><a href="{{route('user.howToSetup')}}">Как подклчиться и настроить?</a></h5>
         <div class="vpn-container">
             <h5 id="hostingName{{$aezaId}}"><span id="status{{$aezaId}}" style="color: orange">Loading status...</span></h5>
             <pre id="aezaConfig">{{$user->vpnConfigs()->first()->aeza}}</pre>
