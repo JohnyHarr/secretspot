@@ -31,3 +31,5 @@ Route::post('/admin/update-user-data/delete', [\App\Http\Controllers\UpdateUserD
 Route::get('/admin/update-server-id', \App\Http\Controllers\UpdateServerIdController::class.'@index')->name('admin.updateServerId')->middleware('checkAccess');
 Route::post('/admin/update-server-id/update', UpdateServerIdController::class.'@update')->name('admin.updateServerId.update')->middleware('checkAccess');
 Route::get('/admin/keygen', \App\Http\Controllers\KeyGenController::class.'@index')->name('admin.keygen')->middleware('checkAccess');
+Route::get('/admin/reset-user-password', \App\Http\Controllers\ResetUserPasswordController::class.'@index')->name('admin.resetUserPassword')->middleware('checkAccess');
+Route::post('/admin/reset-user-password/reset', \App\Http\Controllers\ResetUserPasswordController::class.'@resetPassword')->name('admin.resetUserPassword.reset')->middleware('checkAccess');
